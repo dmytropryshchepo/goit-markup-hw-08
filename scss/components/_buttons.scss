@@ -1,0 +1,12 @@
+button {
+	display: block;
+	margin: 0 auto;
+	padding: 10px 32px;
+	cursor: pointer;
+	color: var(--white-txt-cl);
+	background-color: var(--accent-txt-cl);
+	font-family: var(--main-font);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border: none;
+	border-radius: 4px;
+}

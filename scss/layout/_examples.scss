@@ -1,0 +1,30 @@
+.examples {
+	padding-top: 0;
+}
+.examples__title {
+	margin-bottom: 50px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: calc(42 / 36);
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--main-txt-cl);
+}
+.examples-list__item {
+	position: relative;
+}
+.examples-list__label {
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 700;
+line-height: calc(16 / 14);
+text-transform: uppercase;
+color: var(--white-txt-cl);
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 70px;
+background-color: rgba(47, 48, 58, 0.8);;
+}
