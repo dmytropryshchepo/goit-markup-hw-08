@@ -7,9 +7,9 @@
 		padding-bottom: 96px;
 	}
 }
+
 .peculiarities-list {
 	justify-content: center;
-	align-items: center;
 
 	@media  screen and (min-width: 768px) {
 		display: flex;
@@ -61,6 +61,10 @@ margin-bottom: 0px;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--main-txt-cl);
+	@media screen and (max-width: 767px) {
+text-align: center;
+justify-content: center;
+	}
 }
 .peculiarities-list__p {
 	font-weight: 400;

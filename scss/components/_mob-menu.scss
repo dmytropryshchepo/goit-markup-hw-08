@@ -29,7 +29,6 @@
         display: flex;
         flex-direction: column;
         height: 100%;
-        justify-content: space-between;
         overflow: auto;
         }
         
@@ -54,7 +53,9 @@
                fill: var(--accent-txt-cl);}
              }
           
-    
+    .mob-menu__list {
+      margin-bottom: auto;
+    }
      .mob-menu__link {
           color: var(--main-txt-cl);
           font-weight: 500;
@@ -75,7 +76,6 @@
           line-height: 1.18;
           letter-spacing: 0.02em;
           color: var(--accent-txt-cl);
-         margin-top: 306px;
          margin-bottom: 32px;
           }
           .mob-menu__mail {
