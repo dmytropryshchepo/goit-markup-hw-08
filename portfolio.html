@@ -33,10 +33,10 @@
 				<nav class="nav">
 					<ul class="nav__list list">
 						<li class="nav__item">
-							<a class="nav__link link" href="./index.html">Студия</a>
+							<a class="nav__link nav__link--current link" href="./index.html">Студия</a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link nav__link--current link" href="./portfolio.html">Портфолио</a>
+							<a class="nav__link link" href="./portfolio.html">Портфолио</a>
 						</li>
 						<li class="nav__item">
 							<a class="nav__link link" href="#">Контакты</a>
@@ -45,7 +45,7 @@
 				</nav>
 				<ul class="header-contacts list">
 					<li class="header-contacts__item">
-						<a class="header-contacts__link link" href="mailto:info@devstudio.com">
+						<a class="header-contacts__link link " href="mailto:info@devstudio.com">
 							<svg class="header-contacts__icon" width="16px" height="12px">
 								<use href="./images/icons.svg#mail"></use>
 							</svg>
@@ -54,7 +54,7 @@
 					</li>
 
 					<li class="header-contacts__item">
-						<a class="header-contacts__link link" href="tel:+380961111111">
+						<a class="header-contacts__link link " href="tel:+380961111111">
 							<svg class="header-contacts__icon" width="10px" height="16px">
 								<use href="./images/icons.svg#phone"></use>
 							</svg>
@@ -62,7 +62,53 @@
 						</a>
 					</li>
 				</ul>
+					<button class="open-btn" type="submit">
+						<svg class="header-icon" width="40" height="40">
+						   <use href="./images/icons.svg#icon-menu"></use>
+						 </svg>
+					   </button>
 			</div>
+			 <!--MobMenu-->
+			 
+			 </div>
+			 <div class="mob-menu is-hidden">
+			   <button class="close-btn" type="submit">
+				  <svg class="close-icon" width="40" height="40">
+				   <use href="./images/icons.svg#icon-close"></use>
+				 </svg>
+			   </button>
+			   <ul class="mob-menu__list list">
+				 <li class="mob-menu__item">
+				   <a class="mob-menu__link current link" href="./index.html">Студия</a>
+				 </li>
+				 <li class="mob-menu__item">
+				   <a class="mob-menu__link  link" href="./portfolio.html">Портфолио</a>
+				 </li>
+				 <li class="mob-menu__item">
+				   <a class="mob-menu__link link" href="">Контакты</a>
+				 </li>
+			   </ul>
+			   <div class="mob-menu__contact">
+				 <a class="mob-menu__tel link" href="tel:+380961111111">
+					 +38 096 111 11 11</a>
+			<a class="mob-menu__mail link" href="mailto:info@devstudio.com">
+					   info@devstudio.com</a>
+			  </div>
+			   <ul class="mob-menu__soc list">
+				 <li class="mob-menu__soc-item">
+				   <a class="mob-menu__soc-link" href="">Instagram</a>
+				 </li>
+				 <li class="mob-menu__soc-item">
+				   <a class="mob-menu__soc-link" href="">Twitter</a>
+				 </li>
+				 <li class="mob-menu__soc-item">
+				   <a class="mob-menu__soc-link" href="">Facebook</a>
+				 </li>
+				 <li class="mob-menu__soc-item">
+				   <a class="mob-menu__soc-link" href="">LinkedIn</a>
+				 </li>
+			   </ul>
+			  </div>
 		</header>
 		<!-- основная информация -->
 		<!-- portfolio -->
@@ -87,10 +133,34 @@
 							<button type="button" class="btn-filtr filtr-btn">Маркетинг</button>
 						</li>
 					</ul>
-					<ul class="list cards-set">
+					<ul class="list portfolio-list">
 						<li class="portfolio-item cards-set-item">
 							<a href="" class="link portfolio-link">
-								<div class="img-cover"><img src="./images/portfolio/project1.jpg" alt="project-1" class="portfolio-img" width="370" />
+								<div class="img-cover">
+									  <picture>
+                <source
+                  srcset="
+                    ./images/portfolio/img-1@1x_desktop.jpg 1x,
+                    ./images/portfolio/img-1@2x_desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/img-1@1x_tablet.jpg 1x,
+                    ./images/portfolio/img-1@2x_tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/img-1@1x_mobile.jpg 1x,
+                    ./images/portfolio/img-1@2x_mobile.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+              </picture>
+									<img src="./images/portfolio/img-1@1x_mobile.jpg" alt="project-1" class="portfolio-img" width="450" />
 								<div class="overlay">
 									<p class="overlay-text">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -105,7 +175,31 @@
 						</li>
 						<li class="portfolio-item cards-set-item">
 							<a href="" class="link portfolio-link">
-								<div class="img-cover"><img src="./images/portfolio/project2.jpg" alt="project-2" class="portfolio-img" width="370" />
+								<div class="img-cover">
+									  <picture>
+                <source
+                  srcset="
+				  ./images/portfolio/img-2@1x_desktop.jpg 1x,
+				  ./images/portfolio/img-2@2x_desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+				  ./images/portfolio/img-2@1x_tablet.jpg 1x,
+				  ./images/portfolio/img-2@2x_tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+				  ./images/portfolio/img-2@1x_mobile.jpg 1x,
+				  ./images/portfolio/img-2@2x_mobile.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+              </picture>
+									<img src="./images/portfolio/img-2@1x_mobile.jpg" alt="project-2" class="portfolio-img" width="450" />
 									<div class="overlay">
 										<p class="overlay-text">
 											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -120,7 +214,31 @@
 						</li>
 						<li class="portfolio-item cards-set-item">
 							<a href="" class="link portfolio-link">
-								<div class="img-cover"><img src="./images/portfolio/project3.jpg" alt="project-3" class="portfolio-img" width="370" />
+								<div class="img-cover">
+									  <picture>
+                <source
+                  srcset="
+				  ./images/portfolio/img-3@1x_desktop.jpg 1x,
+				  ./images/portfolio/img-3@2x_desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+				  ./images/portfolio/img-3@1x_tablet.jpg 1x,
+				  ./images/portfolio/img-3@2x_tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+				  ./images/portfolio/img-2@1x_mobile.jpg 1x,
+				  ./images/portfolio/img-3@2x_mobile.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+              </picture>
+									<img src="./images/portfolio/img-2@1x_mobile.jpg" alt="project-3" class="portfolio-img" width="450" />
 									<div class="overlay">
 										<p class="overlay-text">
 											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -135,7 +253,31 @@
 						</li>
 						<li class="portfolio-item cards-set-item">
 							<a href="" class="link portfolio-link">
-								<div class="img-cover"><img src="./images/portfolio/project4.jpg" alt="project-4" class="portfolio-img" width="370" />
+								<div class="img-cover">
+									  <picture>
+                <source
+                  srcset="
+				  ./images/portfolio/img-4@1x_desktop.jpg 1x,
+				  ./images/portfolio/img-4@2x_desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+				  ./images/portfolio/img-4@1x_tablet.jpg 1x,
+				  ./images/portfolio/img-4@2x_tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+				  ./images/portfolio/img-4@1x_mobile.jpg 1x,
+				  ./images/portfolio/img-4@2x_mobile.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+              </picture>
+									<img src="./images/portfolio/img-4@1x_mobile.jpg" alt="project-4" class="portfolio-img" width="450" />
 									<div class="overlay">
 										<p class="overlay-text">
 											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -150,7 +292,31 @@
 						</li>
 						<li class="portfolio-item cards-set-item">
 							<a href="" class="link portfolio-link">
-								<div class="img-cover"><img src="./images/portfolio/project5.jpg" alt="project-5" class="portfolio-img" width="370" />
+								<div class="img-cover">
+									  <picture>
+                <source
+                  srcset="
+				  ./images/portfolio/img-5@1x_desktop.jpg 1x,
+				  ./images/portfolio/img-5@2x_desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+				  ./images/portfolio/img-5@1x_tablet.jpg 1x,
+				  ./images/portfolio/img-5@2x_tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+				  ./images/portfolio/img-5@1x_mobile.jpg 1x,
+				  ./images/portfolio/img-5@2x_mobile.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+              </picture>
+									<img src="./images/portfolio/img-5@1x_mobile.jpg" alt="project-5" class="portfolio-img" width="450" />
 									<div class="overlay">
 										<p class="overlay-text">
 											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -165,7 +331,31 @@
 						</li>
 						<li class="portfolio-item cards-set-item">
 							<a href="" class="link portfolio-link">
-								<div class="img-cover"><img src="./images/portfolio/project6.jpg" alt="project-6" class="portfolio-img" width="370" />
+								<div class="img-cover">
+									  <picture>
+                <source
+                  srcset="
+				  ./images/portfolio/img-6@1x_desktop.jpg 1x,
+				  ./images/portfolio/img-6@2x_desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+				  ./images/portfolio/img-6@1x_tablet.jpg 1x,
+				  ./images/portfolio/img-6@2x_tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+				  ./images/portfolio/img-6@1x_mobile.jpg 1x,
+				  ./images/portfolio/img-6@2x_mobile.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+              </picture>
+									<img src="./images/portfolio/img-6@1x_mobile.jpg" alt="project-6" class="portfolio-img" width="450" />
 									<div class="overlay">
 										<p class="overlay-text">
 											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -180,7 +370,31 @@
 						</li>
 						<li class="portfolio-item cards-set-item">
 							<a href="" class="link portfolio-link">
-								<div class="img-cover"><img src="./images/portfolio/project7.jpg" alt="project-7" class="portfolio-img" width="370" />
+								<div class="img-cover">
+									  <picture>
+                <source
+                  srcset="
+				  ./images/portfolio/img-7@1x_desktop.jpg 1x,
+				  ./images/portfolio/img-7@2x_desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+				  ./images/portfolio/img-7@1x_tablet.jpg 1x,
+				  ./images/portfolio/img-7@2x_tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+				  ./images/portfolio/img-7@1x_mobile.jpg 1x,
+				  ./images/portfolio/img-7@2x_mobile.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+              </picture>
+									<img src="./images/portfolio/img-7@1x_mobile.jpg" alt="project-7" class="portfolio-img" width="450" />
 									<div class="overlay">
 										<p class="overlay-text">
 											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -195,7 +409,31 @@
 						</li>
 						<li class="portfolio-item cards-set-item">
 							<a href="" class="link portfolio-link">
-								<div class="img-cover"><img src="./images/portfolio/project8.jpg" alt="project-8" class="portfolio-img" width="370" />
+								<div class="img-cover">
+									  <picture>
+                <source
+                  srcset="
+				  ./images/portfolio/img-8@1x_desktop.jpg 1x,
+				  ./images/portfolio/img-8@2x_desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+				  ./images/portfolio/img-8@1x_tablet.jpg 1x,
+				  ./images/portfolio/img-8@2x_tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+				  ./images/portfolio/img-8@1x_mobile.jpg 1x,
+				  ./images/portfolio/img-8@2x_mobile.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+              </picture>
+									<img src="./images/portfolio/img-8@1x_mobile.jpg" alt="project-8" class="portfolio-img" width="450" />
 									<div class="overlay">
 										<p class="overlay-text">
 											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -210,7 +448,31 @@
 						</li>
 						<li class="portfolio-item cards-set-item">
 							<a href="" class="link portfolio-link">
-								<div class="img-cover"><img src="./images/portfolio/project9.jpg" alt="project-9" class="portfolio-img" width="370" />
+								<div class="img-cover">
+									  <picture>
+                <source
+                  srcset="
+				  ./images/portfolio/img-9@1x_desktop.jpg 1x,
+				  ./images/portfolio/img-9@2x_desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ../images/portfolio/img-9@1x_tablet.jpg 1x,
+                    ./images/portfolio/img-9@2x_tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+				  ./images/portfolio/img-9@1x_mobile.jpg 1x,
+				  ./images/portfolio/img-9@2x_mobile.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+              </picture>
+									<img src="./images/portfolio/img-9@1x_mobile.jpg" alt="project-9" class="portfolio-img" width="450" />
 									<div class="overlay">
 										<p class="overlay-text">
 											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -230,6 +492,7 @@
 		<!-- подвал -->
 		<footer class="footer">
 			<div class="container">
+				<div class="address-container-wrapper">
 				<div class="address-container">
 					<a class="logo logo-ft link" href="./index.html">Web<span class="logo-dark">Studio</span>
 					</a>
@@ -287,6 +550,7 @@
 						</li>
 					</ul>
 				</div>
+			</div>
 				<div class="footer-mailing">
 					<h2 class="mailing-header">Подпишитесь на рассылку</h2>
 					<form class="mailing-form">
@@ -310,6 +574,7 @@
 				  </div>
 			</div>
 		</footer>
+		<script src="./js/menu.js"></script>
 	</body>
 
 	</html>

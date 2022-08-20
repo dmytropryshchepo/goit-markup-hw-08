@@ -1,5 +1,9 @@
 .examples {
 	padding-top: 0;
+	display: none;
+	@include desktop {
+		display: block;
+	  }
 }
 .examples__title {
 	margin-bottom: 50px;
@@ -9,6 +13,10 @@
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--main-txt-cl);
+}
+.examples-list {
+	display: flex;
+	gap: var(--indent);
 }
 .examples-list__item {
 	position: relative;

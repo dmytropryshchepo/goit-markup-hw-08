@@ -2,7 +2,16 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--indent);
+	@media screen and (min-width: 768px) {
+		.cards-set-item {
+			flex-basis: calc((100% - var(--indent) * (2 - 1)) / 2);
+		}
+	}
+	@media screen and (min-width: 1200px) {
+		.cards-set-item {
+			flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+		}
+	}
+	
 }
-.cards-set-item {
-	flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-}
+

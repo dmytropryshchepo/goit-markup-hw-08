@@ -1,6 +1,7 @@
 // util styles
 @import "./utils/variables";
 @import "./utils/visually-hidden";
+@import "./utils/mixins";
 
 // base styles
 @import "./base/base";
@@ -14,6 +15,7 @@
 @import "./components/container";
 @import "./components/mailing-form";
 @import "./components/modal";
+@import "./components/mob-menu";
 
 // layout styels
 @import "./layout/header";

@@ -2,13 +2,24 @@
 	background-color: var(--dark-bg-cl);
 	padding-top: 60px;
 	padding-bottom: 60px;
+	text-align: center;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
 }
 .footer .container {
-	display: flex;
-	align-items: baseline;
+	// display: flex;
+	// align-items: baseline;
 }
+.address-container-wrapper {
+	margin-bottom: 60px;
+	}
+
 .address-container {
-	margin-right: 70px;
+	margin-bottom: 60px;
+}
+.logo-ft {
+	margin-right: 0px;
 }
 .logo-dark {
 	color: var(--white-txt-cl);
@@ -18,7 +29,8 @@
 }
 .address-iteam,
 .contacts-iteam {
-	margin-bottom: 9px;
+	// margin-bottom: 9px;
+	margin-bottom: 8px;
 }
 .adsress-link {
 	font-weight: 400;
@@ -51,9 +63,10 @@
 	}
 }
 
-.join-container {
-	margin-right: auto;
-}
+// .join-container {
+// 	margin-right: auto;
+// 	margin-bottom: 60px;
+// }
 .join-title {
 	font-weight: 700;
 	font-size: 14px;
@@ -80,3 +93,32 @@
 		background-color: var(--icon-hover-cl);
 	}
 }
+@include tablet {
+	.mailing-input {width: 450px;}
+	.address-container-wrapper {
+	  display: flex;
+	  justify-content: space-around;
+	  margin-bottom: 0;
+	 }
+  }
+  @include desktop {.footer {
+	text-align: left;
+	& .container {
+	  display: flex;
+	  align-items: baseline;
+	}
+  }
+  .logo-footer {font-size: 26px;}
+  .address-container-wrapper {margin-right: auto;
+	margin-bottom: 0;
+	align-items: baseline;}
+	.address-container {margin-right: 70px; margin-bottom: 0;}
+	.footer-soc-container {margin-right: auto;
+	  margin-bottom: 0;}
+	  .mailing-form {display: flex;
+		}
+		.mailing-input {margin-right: 12px;
+		width: 358px;
+	  margin-bottom: 0;}
+	  .mailing-button {margin: 0;}
+  }

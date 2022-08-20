@@ -1,25 +1,69 @@
 .hero {
-	height: 600px;
+	padding: 118px 0 118px 0;
+	text-align: center;
 	background-color: var(--dark-bg-cl);
-	padding: 200px 0;
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
+	// padding: 200px 0;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img@1x_mobile.jpg);
+	@include retina {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../images/hero/img@2x_mobile.jpg);	
+	}
 	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	max-width: 1600px;
-	margin: auto;
+		background-repeat: no-repeat;
+		background-size: cover;
+		max-width: 480px;
+		height: 400px;
+		margin: auto;
+	@include tablet {
+		max-width: 768px;
+		background-image: linear-gradient(
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		  ),
+		  url(../images/hero/img@1x_tablet.jpg);
+		@include retina {
+		  background-image: linear-gradient(
+			  rgba(47, 48, 58, 0.4),
+			  rgba(47, 48, 58, 0.4)
+			),
+			url(../images/hero/img@2x_tablet.jpg);
+		}
+	  }
+	  @include desktop {
+		padding-top: 200px;
+		padding-bottom: 200px;
+		max-width: 1600px;
+		height: 600px;
+		background-image: linear-gradient(
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		  ),
+		  url(../images/hero/Img@1x_desktop.jpg);
+		@include retina {
+		  background-image: linear-gradient(
+			  rgba(47, 48, 58, 0.4),
+			  rgba(47, 48, 58, 0.4)
+			),
+			url(../images/hero/Img@2x_desktop.jpg);
+		}
+	  }
 }
 .hero__title {
-	width: 696px;
+	max-width: 360px;
 	margin: 0 auto;
 	margin-bottom: 30px;
 	font-weight: 900;
-	font-size: 44px;
-	line-height: calc(60 / 44);
+	font-size: 26px;
+	line-height: 1.61;
 	letter-spacing: 0.06em;
 	text-align: center;
 	text-transform: uppercase;
 	color: #ffffff;
+	@include desktop {
+		font-size: 44px;
+		line-height: 1.36;
+		max-width: 696px;
+	}
 }
 .hero__btn {
 	font-weight: 700;
@@ -28,6 +72,6 @@
 	letter-spacing: 0.06em;
 	&:hover,
 	&:focus {
-	background-color: var(--btn-hover-cl);	
-}
+		background-color: var(--btn-hover-cl);
+	}
 }
